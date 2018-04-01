@@ -4,11 +4,18 @@ RUN sudo -u yaourt yaourt -Syyau --noconfirm
 
 RUN sudo -u yaourt yaourt -S --noconfirm \
     pandoc-bin \
-    texlive-most \
     pandoc-citeproc-bin \
-    pandoc-crossref-bin
+    pandoc-crossref-bin \
+    texlive-bin \
+    texlive-core \
+    texlive-pictures \
+    texlive-science \
+    texlive-pstricks \
+    texlive-latexextra \
+    texlive-bibtexextra \
+    texlive-formatsextra \
+    texlive-games
 
 RUN yaourt -Scc --noconfirm
 
 RUN rm -rf /var/cache/pacman/pkg/*
-
