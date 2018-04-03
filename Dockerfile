@@ -14,7 +14,8 @@ RUN sudo -u yaourt yaourt -S --noconfirm \
     texlive-latexextra \
     texlive-bibtexextra \
     texlive-formatsextra \
-    texlive-games
+    texlive-games \
+    svg2pdf-git
 
 RUN yaourt -Scc --noconfirm
 
