@@ -6,7 +6,6 @@ RUN curl -Lsf 'https://github.com/jgm/pandoc/releases/download/2.1.3/pandoc-2.1.
 
 RUN apk del --no-cache curl tar
 
-RUN apk add --update --no-cache bash
 # RUN sudo -u yaourt yaourt -Syyau --noconfirm
 
 # RUN sudo -u yaourt yaourt -S --noconfirm \
