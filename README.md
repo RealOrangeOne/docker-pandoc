@@ -1,5 +1,7 @@
 # Docker Pandoc
 
+[![CircleCI](https://circleci.com/gh/RealOrangeOne/docker-pandoc.svg?style=svg)](https://circleci.com/gh/RealOrangeOne/docker-pandoc)
+
 Docker file to build files using pandoc.
 
 The container is based off Alpine, with `texlive` and `pandoc` installed.
