@@ -3,7 +3,7 @@ jobs:
     build:
         docker:
             - image: circleci/python:3-stretch
-        working_directory: ~/tex-template
+        working_directory: ~/docker-pandoc
         steps:
             - checkout
             - setup_remote_docker
