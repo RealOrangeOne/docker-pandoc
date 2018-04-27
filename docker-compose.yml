@@ -7,10 +7,3 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ".:/app"
-  test:
-    image: "main"
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - "~/docker-pandoc:/app"
