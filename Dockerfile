@@ -7,7 +7,6 @@ RUN apk add --update --no-cache \
     texmf-dist-bibtexextra \
     texmf-dist-pstricks \
     texmf-dist-latexextra \
-    texmf-dist-fontsextra \
     poppler-utils \
     inkscape \
     bash \
