@@ -14,7 +14,8 @@ RUN apk add --update --no-cache \
     ca-certificates \
     librsvg \
     git \
-    openssh
+    openssh \
+    biber
 
 RUN apk add --update --no-cache tar curl && \
     curl -Lsf 'https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-linux.tar.gz' | tar -xvz --strip-components 1 -C /usr/local && \
