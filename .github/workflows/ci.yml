@@ -1,0 +1,19 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build container
+      run: docker-compose build
+    - name: Test container
+      run: cat README.md | docker-compose run main pandoc -t html5 > readme.html
+    - uses: actions/upload-artifact@v1
+      with:
+        name: readme.html
+        path: readme.html
