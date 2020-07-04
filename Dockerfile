@@ -13,7 +13,7 @@ RUN apk add --update --no-cache \
     ca-certificates \
     librsvg \
     git \
-    openssh \
+    openssh-client \
     biber \
     ghostscript
 
