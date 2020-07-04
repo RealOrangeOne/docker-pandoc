@@ -14,7 +14,7 @@ jobs:
     - name: Show image info
       run: docker images
     - name: Test container
-      run: docker-compose run main sh /app/test.sh
+      run: docker-compose run main -w /app sh /app/test.sh
     - uses: actions/upload-artifact@v1
       with:
         name: readme.html
