@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.12
 
 RUN apk add --update --no-cache \
     texlive \
@@ -9,12 +9,11 @@ RUN apk add --update --no-cache \
     texmf-dist-latexextra \
     poppler-utils \
     inkscape \
-    bash \
     make \
     ca-certificates \
     librsvg \
     git \
-    openssh \
+    openssh-client \
     biber \
     ghostscript
 
